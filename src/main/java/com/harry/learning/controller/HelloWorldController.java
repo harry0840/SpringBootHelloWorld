@@ -1,0 +1,13 @@
+package com.harry.learning.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloWorldController {
+
+    @GetMapping("/hello")
+    public String getHeloMessage() {
+        return "Hello Wold! This is my first MicroService";
+    }
+}
